@@ -1,5 +1,8 @@
 /* http://codeitdown.com/css-triangles-responsive/ */
 
+/* I used the resource above to create a responsive trinangle in CSS
+ as a part of the from container */ 
+
 body {
   background-color: #ECECEA;
   font-family: 'Ubuntu', sans-serif;
@@ -11,13 +14,66 @@ body {
   background-color : #232323;
 }
 
+img.logo {
+  display: block;
+  width: 4rem;
+  margin: 10px auto;
+  
+}
+
 .headText p {
-  font-size: 2rem;
+  display: block;
+  font-size: 1.3rem;
   color: #fff;
+  text-align: center;
+}
+
+@media (min-width: 480px) {
+  headText p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 480px) {
+  img.logo {
+    width: 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  img.logo {
+    width: 10rem;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .headText p {
+  font-size: 1.2rem;
   position: absolute;
-  left: 0%;
+  left: 5%;
   top: 50%;
   transform: translateY(-50%);
+  }
+}
+
+@media (min-width: 768px) {
+  .headText p {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .headText p {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  img.logo {
+    width: 11rem;
+  }
 }
 
 .text {
@@ -55,8 +111,14 @@ li span {
   padding: 30px 20px;
   background: #B1D036;
   box-sizing: border-box;
+  margin-top: 40px;
 }
 
+@media (min-width: 768px) {
+  .form-container {
+    margin-top: 0;
+  }
+}
 
 .form-container input {
   margin-bottom: 15px;
@@ -68,27 +130,16 @@ li span {
   margin-top: 15px;
 }
 
-/* .form-container::before {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  border-left: 162.5px solid transparent;
-  border-right: 162.5px solid transparent;
-  border-top: 90px solid #B1D036;
-  transform: translateX(-50%);
-} */
-
 .triangle-down {
     display: block;
     width: 100%;
     height: 0;
-    padding-left:50%;
+    padding-left: 50%;
     padding-top: 50%;
     overflow: hidden;
-    margin-top: -5.6px;
+    margin-top: -6px;
 }
-.triangle-down:after {
+.triangle-down::after {
     content: "";
     display: block;
     width: 0; 
@@ -103,7 +154,7 @@ li span {
 .form-container::after {
   content: "";
   position: absolute;
-  top: -20px;
+  top: -17px;
   left: 50%;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
@@ -111,19 +162,19 @@ li span {
   transform: translateX(-50%);
 }
 
+
 button.submit {
   background-color: #76347B;
   color: #ECECEA;
+  padding: 15px 20px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -57px;
-  border: 2px solid #ECECEA;
+  bottom: -68px;
+  border: 1px solid #555;
   border-radius: 8px;
   text-transform: uppercase;
-  box-shadow: 2px 2px 2px 1px rgba(177, 208, 54, 0.5);
-  
-
+  box-shadow: inset 0 0 0px 3px rgba(227,227,234, 0.9), inset 0 0px 2px 2px #555; 
 }
 
 .message {
@@ -135,19 +186,26 @@ button.forward {
   display: block;
   margin: 0 auto;
   color: #76347B;
-  background-color: #ECECEA;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #E3E3E3;
+  box-shadow: inset 0 -2px 2px 2px rgba(0, 0, 0, 0.2);
+  border: 1px solid #999;
+  border-radius: 7px;
   text-transform: uppercase;
-  padding: 5px 20px;
+  padding: 8px 22px;
 }
 
 img.bee {
   display: block;
-  margin-top: 150px;
+  margin-top: 40px;
   margin-bottom: 10px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media (min-width: 768) {
+  img.bee {
+    margin-top: 70px;
+  }
 }
 
 footer {
@@ -166,17 +224,9 @@ p.copy {
   margin-bottom: 60px;
 }
 
-div.bottom-wrapper {
-  max-width: 325px;
-} */
-
-p.location {
-  margin-left: -18px;
-  width: 360px;
-  text-align: center;
+@media (min-width: 768px) {
+    p.location {
+    min-width: 357px;
+    text-align: center;
+  }
 }
-
-
-
-
-
