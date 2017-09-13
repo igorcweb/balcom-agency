@@ -194,6 +194,10 @@ button.forward {
   padding: 8px 22px;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 img.bee {
   display: block;
   margin-top: 40px;
@@ -230,3 +234,5 @@ p.copy {
     text-align: center;
   }
 }
+
+
