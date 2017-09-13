@@ -17,10 +17,10 @@
     <div class="header">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-lg-4 col-md-3">
             <img class="logo" src="images/bsqueezed_logo.png" alt="Logo">
           </div>
-          <div class="col-md-8 headText">
+          <div class="col-lg 8 col-md-9 headText">
             <p>Find out how people look for your brand and talk about it on the web <span>with a free Online Search &amp; Conversation Audit.</span></p>
           </div>
         </div>
@@ -28,65 +28,69 @@
 
     </div>
   </header>
-  <div class="container">
-    <main>
-      <div class="row">
-        <div class="col-sm-7 mainText">
-          <p class="text">
-            It’s simple. You share some basic information with us and the <span><a href="https://www.balcomagency.com/">Balcom Agency</a></span>            will put our suite of monitoring tools to work for you. We sort through everything from:
-          </p>
 
-          <ul class="listStyle">
-            <li><span>Blog posts</span></li>
-            <li><span>Online review</span></li>
-            <li><span>News stories</span></li>
-            <li><span>Micromedia like Twitter</span></li>
-            <li><span>Google search activity</span></li>
-          </ul>
+  <main class="container">
+    <div class="row justify-content-right">
+      <div class="col-lg-9">
 
-          <p>
-            You get a 30-day snapshot of the online conversation and interest surrounding your business and we provide a top-line analysis.
-            No fine print, no strings attached. What’s not to like?
-          </p>
-          <p>
-            In a hurry? Call Alan at 817-877-9933.
-          </p>
-        </div> <!--mainText -->
-        <div class="col-sm-5">
-          <div class="form-container">
-            <form class="form-horizontal">
-              <div class="form-group">
-                <div class="col-sm-12">
-                  <input type="text" class="form-control" id="inputName" placeholder="Name">
+        <!-- Nested Columns -->
+        <div class="row">
+          <section class="col-lg-6 col-md-6">
+            <p class="text">
+              It’s simple. You share some basic information with us and the <span><a href="https://www.balcomagency.com/">Balcom Agency</a></span>  will put our suite of monitoring tools to work for you. We sort through everything from:
+            </p>
+            <ul class="listStyle">
+              <li><span>Blog posts</span></li>
+              <li><span>Online review</span></li>
+              <li><span>News stories</span></li>
+              <li><span>Micromedia like Twitter</span></li>
+              <li><span>Google search activity</span></li>
+            </ul>
+
+            <p>
+              You get a 30-day snapshot of the online conversation and interest surrounding your business and we provide a top-line analysis.
+              No fine print, no strings attached. What’s not to like?
+            </p>
+            <p>
+              In a hurry? Call Alan at 817-877-9933.
+            </p>
+          </section>
+          <section class="col-lg-6 col-md-6">
+            <div class="form-container">
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <div class="col-md-12">
+                    <input type="text" class="form-control" id="inputName" placeholder="Name" required>
+                  </div>
+                  <div class="col-md-12">
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                  </div>
+                  <div class="col-md-12">
+                    <input type="text" class="form-control" id="inpuCompany" placeholder="Company" required>
+                  </div>
+                  <div class="col-md-12">
+                    <textarea placeholder="Message (optional)" class="form-control message" cols="3" rows="6"></textarea>
+                    <button type="button submit" class="submit btn btn-md">Let's Get Started</button>
+                  </div>
                 </div>
-                <div class="col-sm-12">
-                  <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-                </div>
-                <div class="col-sm-12">
-                  <input type="text" class="form-control" id="inpuCompany" placeholder="Company">
-                </div>
-                <div class="col-sm-12">
-                <textarea placeholder="Message (optional)" class="form-control message" cols="3" rows="6"></textarea>
-                <button type="button submit" class="submit btn btn-md">Let's Get Started</button>
-                </div>  
-              </div>
-            </form>
-          </div><!-- form container -->  
-      <div class="bottom-wrapper">   
-        <img class="bee" src="images/bsqueezed_bee.png" alt="Bee">
-        <button type="button" class="btn forward">Forward</button>
-        <footer>         
-          <a href="https://www.balcomagency.com/">BalcomAgency.com</a>
-          <p class="location">1500 Ballinger @ Rio Grande | Fort Worth, Texas 76102</p>
-          <p class="copy">&copy; Balcom Agency</p>
-        </footer>
-      </div>  
-    </main>
- 
+                <!--class form-group -->
+              </form>
+            </div> <!-- from container -->
+            <div class="triangle-down"></div>
+            <img class="bee" src="images/bsqueezed_bee.png" alt="Bee">
+            <button type="button" class="btn forward">Forward</button>
+            <footer>
+              <a href="https://www.balcomagency.com/">BalcomAgency.com</a>
+              <p class="location">1500 Ballinger @ Rio Grande | Fort Worth, Texas 76102</p>
+              <p class="copy">&copy; Balcom Agency</p>
+            </footer>
+          </section>
+        </div>
+        <!-- End Nested Columns -->
+
+      </div>
     </div>
-    </div>
-  </div>
-
+  </main>
 
   <script src="bootstrap/jquery-3.2.1.min.js"></script>
   <script src="bootstrap/bootstrap.min.js"></script>
