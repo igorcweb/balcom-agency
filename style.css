@@ -1,7 +1,7 @@
 /* http://codeitdown.com/css-triangles-responsive/ */
 
 /* I used the resource above to create a responsive trinangle in CSS
- as a part of the from container */ 
+ as a part of the formrm container */ 
 
 body {
   background-color: #ECECEA;
@@ -136,7 +136,7 @@ li span {
     padding-left: 50%;
     padding-top: 50%;
     overflow: hidden;
-    margin-top: -6px;
+    margin-top: -0.375rem;
 }
 .triangle-down::after {
     content: "";
@@ -160,7 +160,6 @@ li span {
   border-bottom: 30px solid #B1D036;
   transform: translateX(-50%);
 }
-
 
 button.submit {
   background-color: #76347B;
@@ -242,5 +241,3 @@ p.copy {
     text-align: center;
   }
 }
-
-
